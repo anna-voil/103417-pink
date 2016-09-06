@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Войль](https://up.htmlacademy.ru/adaptive/8/user/103417).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Ожерельев`.
 
 ---
 
