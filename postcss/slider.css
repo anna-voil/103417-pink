@@ -1,0 +1,5 @@
+.slider {
+  &--gray {
+    background: $bg_lightgrey;
+  }
+}

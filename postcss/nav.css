@@ -1,0 +1,25 @@
+.nav {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__logo {
+    background: url(../img/logo-pink-white-mobile.svg) no-repeat;
+    width: 75px;
+    height: 25px;
+    background-origin: content-box;
+    margin: $mobile-margin;
+
+  }
+  &__items {
+    display: none;
+    margin: $mobile-margin;
+  }
+  &__item {
+    list-style-type: none;
+  }
+  &__items a {
+    color: $bg_white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

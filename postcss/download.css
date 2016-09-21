@@ -1,0 +1,6 @@
+.download {
+  font-weight: lighter;
+  &__button {
+    font-weight: bold;
+  }
+}

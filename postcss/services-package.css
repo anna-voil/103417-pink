@@ -1,0 +1,8 @@
+.services-package {
+  &__name {
+    font-weight: bold;
+  }
+  &__price {
+    font-family: 'Myriad Pro Regular';
+  }
+}

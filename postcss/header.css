@@ -1,0 +1,10 @@
+.header {
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+
+
+  &__title {
+    text-align: center;
+    color: $bg_white;
+    font-family: 'Myriad Pro Regular';
+  }
+}

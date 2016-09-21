@@ -1,0 +1,8 @@
+.add-photo {
+  background: $bg_lightgrey;
+  padding: $mobile-margin;
+
+  &__filters {
+  }
+
+}
