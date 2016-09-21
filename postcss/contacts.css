@@ -1,4 +1,7 @@
 .contacts {
+  margin: $mobile-margin;
+  text-align: center;
+
   &__heading {
     font-weight: bold;
   }

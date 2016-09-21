@@ -2,23 +2,32 @@
   overflow: hidden;
   background: $bg_lightgrey;
   color: $darkblue;
+  font-size: 14px;
+  line-height: 24px;
 
 
   &__username {
     font-weight: bold;
-    margin: $mobile-margin;
+    margin: 10px 20px 0 20px;
   }
   &__post-time {
     font-weight: lighter;
+    font-size: 12px;
     text-transform: uppercase;
+    margin: 10px 20px 0 0;
+
   }
   &__comment {
-    margin: $mobile-margin;
+    margin: 0 20px;
+  }
+  &__comment p {
+    margin: 0;
   }
   &__like {
     display: block;
     color: $darkpink;
-    margin: $mobile-margin;
+    text-transform: uppercase;
+    margin: 20px;
 
   }
 

@@ -1,0 +1,18 @@
+.button {
+  font-weight: bold;
+  font-size: $btn_font-size;
+  color: $bg_white;
+
+  &--rounded {
+    width: 280px;
+    height: 55px;
+    border: solid 3px $bg_white;
+    border-radius: 27px;
+    background: none;
+  }
+  &--pink {
+    border: solid 3px $darkpink;
+    color: $darkpink;
+
+  }
+}

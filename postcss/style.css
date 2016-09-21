@@ -12,6 +12,8 @@
 @import "photos.css";
 @import "photo-block.css";
 @import "add-photo.css";
+@import "mention.css";
+@import "button.css";
 
 
 @import "footer.css";
@@ -24,4 +26,5 @@ body {
   margin: auto;
   background: #fff;
   font-family: 'Open Sans';
+  color: $darkblue;
 }

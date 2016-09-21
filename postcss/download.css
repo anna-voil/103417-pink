@@ -1,6 +1,13 @@
 .download {
+  text-align: center;
+  color: $bg_white;
+  padding: $mobile-margin;
   font-weight: lighter;
-  &__button {
-    font-weight: bold;
+  background-color: $darkblue;
+
+  &__comment {
+    font-size: 14px;
+    line-height: 24px;
   }
+
 }

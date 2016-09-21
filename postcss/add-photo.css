@@ -1,4 +1,5 @@
 .add-photo {
+  text-align: center;
   background: $bg_lightgrey;
   padding: $mobile-margin;
 
