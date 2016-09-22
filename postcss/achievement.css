@@ -1,0 +1,4 @@
+.achievement {
+  display: flex;
+  flex-direction: column;
+}
