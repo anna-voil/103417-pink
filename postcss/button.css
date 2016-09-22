@@ -16,6 +16,8 @@
   }
   &--green {
     border: none;
+    margin: 30px 0;
     text-transform: uppercase;
+    background: $btn_green;
   }
 }

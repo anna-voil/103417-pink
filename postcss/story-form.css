@@ -1,4 +1,5 @@
 .story-form fieldset {
+  border: none;
 }
 
 .story-form {
@@ -14,6 +15,7 @@
   }
   &__row {
     font-size: 14px;
+    line-height: 30px;
     text-transform: uppercase;
     color: $darkpink;
   }
@@ -58,7 +60,16 @@
     width: 280px;
     height: 200px;
   }
-
+  &__send-form {
+    display: block;
+    margin: auto;
+  }
+  &__footnote {
+    text-align: center;
+  }
+&__footnote span {
+  color: $darkpink;
+}
 
 
 }
