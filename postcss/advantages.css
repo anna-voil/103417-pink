@@ -5,10 +5,12 @@
   &__review {
     text-align: center;
   }
+
   &__heding {
     font-weight: bold;
   }
-  $__text {
-    font-weight: normal;;
+
+  &__text {
+    font-weight: normal;
   }
 }

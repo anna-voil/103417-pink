@@ -1,12 +1,14 @@
 .footer {
   text-align: center;
   margin: $mobile-margin;
+
   &__logo {
     background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
     width: 150px;
     height: 40px;
     margin: auto;
   }
+  
   &__copyright {
   }
 }

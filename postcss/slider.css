@@ -1,8 +1,10 @@
 .slider {
+
   &__controls {
     display: flex;
     justify-content: center;
   }
+  
   &--gray {
     background: $bg_lightgrey;
   }

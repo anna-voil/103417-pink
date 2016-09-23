@@ -8,15 +8,17 @@
     height: 25px;
     background-origin: content-box;
     margin: $mobile-margin;
-
   }
+
   &__items {
     display: none;
     margin: $mobile-margin;
   }
+
   &__item {
     list-style-type: none;
   }
+
   &__items a {
     color: $bg_white;
     font-weight: bold;

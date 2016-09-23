@@ -10,10 +10,12 @@
     border-radius: 27px;
     background: none;
   }
+
   &--pink {
     border: solid 3px $darkpink;
     color: $darkpink;
   }
+  
   &--green {
     border: none;
     margin: 30px 0;

@@ -6,22 +6,27 @@
   &__item {
     margin: $mobile-margin;
   }
+
   &__text {
     text-align: center;
     margin: $mobile-margin;
   }
+
   &__fieldset {
     display: flex;
   }
+
   &__row {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
     color: $darkpink;
   }
+
   &__caption {
     margin-left: 20px;
   }
+
   &__textfield {
     width: 260px;
     height: 60px;
@@ -31,6 +36,7 @@
     font-size: 18px;
     font-weight: normal;
   }
+
   &__textfield::placeholder,
   &__textarea::placeholder {
     font-family: 'Open Sans';
@@ -38,6 +44,7 @@
     font-weight: normal;
     color: $darkblue;
   }
+
   &__header {
     text-align: center;
     font-weight: normal;
@@ -45,31 +52,36 @@
     text-transform: uppercase;
     color: $darkpink;
   }
+
   &__achievements {
     background: $bg_lightgrey;
     padding: $mobile-margin;
   }
+
   &__apps {
     padding: $mobile-margin;
     background: $bg_lightgrey;
   }
+
   &__user-story {
     text-align: center;
   }
+
   &__textarea {
     width: 280px;
     height: 200px;
   }
+
   &__send-form {
     display: block;
     margin: auto;
   }
+
   &__footnote {
     text-align: center;
   }
-&__footnote span {
-  color: $darkpink;
-}
 
-
+  &__footnote span {
+    color: $darkpink;
+  }
 }

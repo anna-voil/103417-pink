@@ -18,13 +18,12 @@
 @import "achievement.css";
 @import "apps.css";
 @import "popup.css";
-
-
 @import "footer.css";
 
 html {
   background: gray;
 }
+
 body {
   width: 320px;
   margin: auto;
