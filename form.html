@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>PINK - конкурс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <h1 class="nav__header">PINK</h1>
+        <div class="nav__logo"></div>
         <ul class="nav__items">
           <li class="nav__item"><a href="index.html">Главная</a></li>
           <li class="nav__item"><a href="foto.html">Фотографии</a></li>
@@ -18,57 +19,62 @@
       <h2 class="header__title">Конкурс на самое безбашеное путешествие с Пинк</h2>
     </header>
     <main class="main">
-      <div class="main__text">
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
-      </div>
       <form class="story-form">
+        <div class="story-form__text">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        </div>
         <fieldset class="story-form__fieldset">
-          <label class="story-form__row">Фамилия:
+          <label class="story-form__row">
+            <span class="story-form__caption">Фамилия:</span>
             <input class="story-form__textfield" type="text" placeholder="Укажите фамилию"/>
           </label>
-          <label class="story-form__row">Имя:
+          <label class="story-form__row">
+            <span class="story-form__caption">Имя:</span>
             <input class="story-form__textfield" type="text" placeholder="Введите ваше имя"/>
           </label>
-          <label class="story-form__row">Отчество:
+          <label class="story-form__row">
+            <span class="story-form__caption">Отчество:</span>
             <input class="story-form__textfield" type="text" placeholder="Ну и отчество тоже"/>
           </label>
         </fieldset>
         <fieldset class="story-form__achievements">
-          <h3 class="story-form__header">Ваши безбашенные достижения в путешествии</h3>
-          <div class="achievements">
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Сделал селфи с акулой</label>
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Обгорел на пляже</label>
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Видел Чака Норриса</label>
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Накупил сувениров</label>
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Удержал башню</label>
-            <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Разгромил отель</label>
+          <h3 class="story-form__header">Ваши безбашенные<br/> достижения в путешествии</h3>
+          <div class="achievement">
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Сделал селфи с акулой</label>
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Обгорел на пляже</label>
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Видел Чака Норриса</label>
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Накупил сувениров</label>
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Удержал башню</label>
+            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Разгромил отель</label>
           </div>
         </fieldset>
         <fieldset class="story-form__user-contacts">
-          <label class="story-form__row">Номерок телефончика
+          <label class="story-form__row">
+            <span class="story-form__caption">Номерок телефончика</span>
             <input class="story-form__textfield" type="tel" placeholder="Номер, пожалуйста"/>
           </label>
-          <label class="story-form__row">Адресок почты
+          <label class="story-form__row">
+            <span class="story-form__caption">Адресок почты</span>
             <input class="story-form__textfield" type="email" placeholder="Введите почту"/>
           </label>
         </fieldset>
         <fieldset class="story-form__apps apps">
-          <h3 class="apps__header">С каким приложением путешествовали?</h3>
+          <h3 class="story-form__header">С каким приложением путешествовали?</h3>
           <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Pink для iOS</label>
           <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Pink на Android</label>
           <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Windows Phone</label>
         </fieldset>
         <fieldset class="story-form__user-story">
           <label class="story-form__row">Опишите свои эмоции
-            <input class="story-form__textarea" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"/>
+            <textarea class="story-form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
           </label>
         </fieldset>
-        <input class="story-form__send-form" type="submit" value="Отправить форму" />
+        <input class="story-form__send-form button button--green" type="submit" value="Отправить форму" />
         <p class="story-form__footnote"><span>*</span> - Обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
-      <img class="footer__logo" alt="PINK-logo"/>
+      <div class="footer__logo" title="PINK-logo"></div>
       <div class="footer__social social">
         <a class="social__link" href="#"><img/></a>
         <a class="social__link" href="#"><img/></a>
@@ -76,22 +82,28 @@
       </div>
       <div class="footer__copyright">
         <span>Разработано</span>
-        <a href="https://htmlacademy.ru"><img/></a>
+        <a href="https://htmlacademy.ru"></a>
       </div>
     </footer>
 
 <!--Скрытые формы-->
 
 <form class="popup">
-  <span class="popup__header">Что-то пошло не так!</span>
-  <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="popup__button">ок</button>
+  <div class="popup__info">
+    <span class="popup__header">Что-то пошло не так!</span>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  </div>
+  <button class="popup__button button button--green">ок</button>
 </form>
 
 <form class="popup">
-  <span class="popup__header">Ваша заявка отправлена</span>
-  <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-  <button class="popup__button">Закрыть окно</button>
+  <div class="popup__info">
+    <span class="popup__header">Ваша заявка отправлена</span>
+    <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+  </div>
+  <div class="popup__btn-panel">
+    <button class="popup__button button button--green">Закрыть окно</button>
+  </div>
 </form>
   </body>
 </html>

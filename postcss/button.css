@@ -1,0 +1,25 @@
+.button {
+  width: 280px;
+  height: 55px;
+  font-weight: bold;
+  font-size: $btn_font-size;
+  color: $bg_white;
+
+  &--rounded {
+    border: solid 3px $bg_white;
+    border-radius: 27px;
+    background: none;
+  }
+
+  &--pink {
+    border: solid 3px $darkpink;
+    color: $darkpink;
+  }
+  
+  &--green {
+    border: none;
+    margin: 30px 0;
+    text-transform: uppercase;
+    background: $btn_green;
+  }
+}

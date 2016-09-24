@@ -1,0 +1,11 @@
+.photos {
+  
+  &__item {
+    margin: $mobile-margin;
+  }
+
+  &__text {
+    text-align: center;
+    margin: $mobile-margin;
+  }
+}

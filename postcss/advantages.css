@@ -1,0 +1,16 @@
+.advantages {
+  padding: $mobile-margin;
+  background: $bg_lightgrey;
+
+  &__review {
+    text-align: center;
+  }
+
+  &__heding {
+    font-weight: bold;
+  }
+
+  &__text {
+    font-weight: normal;
+  }
+}

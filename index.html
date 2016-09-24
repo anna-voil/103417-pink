@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>PINK - главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <h1 class="nav__header">PINK</h1>
+        <div class="nav__logo"></div>
         <ul class="nav__items">
           <li class="nav__item"><a href="index.html">Главная</a></li>
           <li class="nav__item"><a href="foto.html">Фотографии</a></li>
@@ -15,10 +16,11 @@
           <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
         </ul>
       </nav>
+      <img class="header__image" src="img/iphone-hand-mobile@1x.png">
     </header>
     <main class="main">
       <div class="download">
-        <button class="download__button" type="button">Скачать приложение</button>
+        <button class="download__button button button--rounded" type="button">Скачать приложение</button>
         <div class="download__icons">
           <img class="download__icon"/>
           <img class="download__icon"/>
@@ -43,7 +45,7 @@
           <h3 class="advantages__heading">Заводит новых друзей</h3>
           <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
-        <img class="advantages__img"/>
+        <img src="img/iphone-screen-mobile@1x.png"/>
       </div>
       <div class="slider slider--white">
         <div class="slider__slides">
@@ -69,8 +71,10 @@
       <div class="slider slider--gray">
         <div class="slider__slides">
           <section class="slider__slide services-package">
-            <h3 class="services-package__name">Стандарт</h3>
-            <p class="services-package__price">3,99 USD</p>
+            <div class="services-package__header">
+              <h3 class="services-package__name">Стандарт</h3>
+              <p class="services-package__price">3,99 USD</p>
+            </div>
             <ul class="services-package__options">
               <li class="services-package__option">
                 <span class="services-package__option-name">Розовый фильтр</span>
@@ -84,8 +88,10 @@
             </ul>
           </section>
           <section class="slider__slide services-package">
-            <h3 class="services-package__name">Стандарт</h3>
-            <p class="services-package__price">3,99 USD</p>
+            <div class="services-package__header">
+              <h3 class="services-package__name">Стандарт</h3>
+              <p class="services-package__price">3,99 USD</p>
+            </div>
             <ul class="services-package__options">
               <li class="services-package__option">
                 <span class="services-package__option-name">Розовый фильтр</span>
@@ -99,8 +105,10 @@
             </ul>
           </section>
           <section class="slider__slide services-package">
-            <h3 class="services-package__name">Стандарт</h3>
-            <p class="services-package__price">3,99 USD</p>
+            <div class="services-package__header">
+              <h3 class="services-package__name">Стандарт</h3>
+              <p class="services-package__price">3,99 USD</p>
+            </div>
             <ul class="services-package__options">
               <li class="services-package__option">
                 <span class="services-package__option-name">Розовый фильтр</span>

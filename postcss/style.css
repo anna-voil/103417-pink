@@ -1,0 +1,33 @@
+@import "variables.css";
+@import "header.css";
+@import "nav.css";
+@import "download.css";
+@import "offer.css";
+@import "advantages.css";
+@import "slider.css";
+@import "map.css";
+@import "fonts.css";
+@import "services-package.css";
+@import "contacts.css";
+@import "photos.css";
+@import "photo-block.css";
+@import "add-photo.css";
+@import "mention.css";
+@import "button.css";
+@import "story-form.css";
+@import "achievement.css";
+@import "apps.css";
+@import "popup.css";
+@import "footer.css";
+
+html {
+  background: gray;
+}
+
+body {
+  width: 320px;
+  margin: auto;
+  background: #fff;
+  font-family: 'Open Sans';
+  color: $darkblue;
+}
