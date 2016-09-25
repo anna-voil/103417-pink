@@ -1,3 +1,4 @@
+@import "../node_modules/normalize.css/normalize.css";
 @import "variables.css";
 @import "header.css";
 @import "nav.css";
@@ -19,15 +20,28 @@
 @import "apps.css";
 @import "popup.css";
 @import "footer.css";
+@import "container.css";
 
 html {
   background: gray;
+  /*background: url() no-repeat*/
 }
 
 body {
-  width: 320px;
   margin: auto;
   background: #fff;
   font-family: 'Open Sans';
   color: $darkblue;
+}
+
+body {
+  @media (--mobile-widths) {
+    max-width: 320px;
+  }
+  @media (--tablet-widths) {
+    max-width: 700px;
+  }
+  @media (--desktop-widths) {
+    max-width: 1200px;
+  }
 }

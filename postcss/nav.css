@@ -7,12 +7,49 @@
     width: 75px;
     height: 25px;
     background-origin: content-box;
-    margin: $mobile-margin;
   }
+
+
+  @media (--mobile-widths) {
+    &__logo {
+      background: url(../img/)
+    }
+  }
+
+  @media (--tablet-widths) {
+
+  }
+
+  @media (--desktop-widths) {
+
+  }
+
+
+
+
+
+
+
+
+
+
+/*старый код*/
+  @media (--desktop-widths) {
+    display: flex;
+
+  }
+
+
 
   &__items {
     display: none;
-    margin: $mobile-margin;
+
+    @media (--desktop-widths) {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+
+    }
   }
 
   &__item {

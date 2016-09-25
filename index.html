@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>PINK - главная</title>
+    <link href="node_modules/normalize.css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav container">
         <div class="nav__logo"></div>
         <ul class="nav__items">
           <li class="nav__item"><a href="index.html">Главная</a></li>
@@ -16,18 +17,18 @@
           <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
         </ul>
       </nav>
-      <img class="header__image" src="img/iphone-hand-mobile@1x.png">
-    </header>
-    <main class="main">
-      <div class="download">
+      <div class="download container">
+        <div class="download__header">Взгляните на жизнь иначе!</div>
         <button class="download__button button button--rounded" type="button">Скачать приложение</button>
         <div class="download__icons">
-          <img class="download__icon"/>
-          <img class="download__icon"/>
-          <img class="download__icon"/>
+          <img class="download__icon" src="img/logo-apple.svg"/>
+          <img class="download__icon" src="img/logo-android.svg"/>
+          <img class="download__icon" src="img/logo-microsoft.svg"/>
         </div>
         <p class="download__comment">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
+    </header>
+    <main class="main">
       <div class="offer">
         <p class="offer__text">Устали от серости мегаполиса?</p>
         <p class="offer__text">Нам есть, что вам предложить!</p>

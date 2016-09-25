@@ -4,12 +4,10 @@
 
 .story-form {
   &__item {
-    margin: $mobile-margin;
   }
 
   &__text {
     text-align: center;
-    margin: $mobile-margin;
   }
 
   &__fieldset {
@@ -55,11 +53,9 @@
 
   &__achievements {
     background: $bg_lightgrey;
-    padding: $mobile-margin;
   }
 
   &__apps {
-    padding: $mobile-margin;
     background: $bg_lightgrey;
   }
 
