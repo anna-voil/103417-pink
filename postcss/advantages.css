@@ -1,5 +1,4 @@
 .advantages {
-  padding: $mobile-margin;
   background: $bg_lightgrey;
 
   &__review {

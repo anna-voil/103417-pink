@@ -1,6 +1,10 @@
 .header {
-  min-height: 237px;
-  background: url(../img/bg-back-mobile@1x.jpg) top center no-repeat;
+  height: 730px;
+  background-image: url(../img/iphone-hand-mobile@1x.png),
+                    url(../img/bg-back-mobile@1x.jpg);
+  background-size: auto, cover;
+  background-position: top 175px left, top center;
+  background-repeat: no-repeat;
 
   &__title {
     padding: 0 20px;
@@ -9,8 +13,20 @@
     color: $bg_white;
     font-weight: lighter;
   }
-  
-  &__image {
-    margin-top: 110px;
+
+  @media (--mobile-widths) {
+    position: relative;
   }
+
+  @media (--tablet-widths) {
+    background-size: 470px auto, cover;
+    background-position: bottom right 45px, top center;
+  }
+
+  @media (--desktop-widths) {
+    background-size: 470px auto, cover;
+    background-position: bottom right 157px, top center;
+  }
+
+
 }

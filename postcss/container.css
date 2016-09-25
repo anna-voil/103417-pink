@@ -1,0 +1,19 @@
+.container {
+align-items: center;
+
+@media (--mobile-widths) {
+  padding: 0 20px;
+  }
+
+  @media (--tablet-widths) {
+    padding: 0 40px;
+  }
+
+  @media (--desktop-widths) {
+    padding: 0 130px;
+  }
+}
+
+  @custom-media --mobile-widths (max-width: 699px);
+  @custom-media --tablet-widths (min-width: 700px) and (max-width: 899px);
+  @custom-media --desktop-widths (min-width: 900px);

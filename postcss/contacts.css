@@ -1,12 +1,20 @@
 .contacts {
-  margin: $mobile-margin;
   text-align: center;
+  font-size: 24px;
+
+  &__contact-us {
+    font-weight: lighter;
+  }
 
   &__heading {
     font-weight: bold;
+    font-size: 18px;
+    margin: 0;
   }
-  
+
   &__info {
     color: $darkpink;
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
