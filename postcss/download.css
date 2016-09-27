@@ -10,6 +10,7 @@
   @media (--mobile-widths) {
     position: absolute;
     bottom: 0;
+    height: 270px;
 
     &__header {
       display: none;

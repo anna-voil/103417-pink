@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--index">
       <nav class="nav container">
         <div class="nav__logo"></div>
         <ul class="nav__items">
@@ -29,37 +29,50 @@
       </div>
     </header>
     <main class="main">
-      <div class="offer">
+      <div class="offer  container">
         <p class="offer__text">Устали от серости мегаполиса?</p>
-        <p class="offer__text">Нам есть, что вам предложить!</p>
+        <p class="offer__text">Нам есть, что вам<br/> предложить!</p>
       </div>
-      <div class="advantages">
+      <div class="advantages  container">
+        <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
         <section class="advantages__review">
           <h3 class="advantages__heading">Поднимает настроение</h3>
           <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </section>
+        <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
         <section class="advantages__review">
           <h3 class="advantages__heading">Меняет мир вокруг</h3>
           <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </section>
+        <img class="advantages__img advantages__img--last" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
         <section class="advantages__review">
           <h3 class="advantages__heading">Заводит новых друзей</h3>
           <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
-        <img src="img/iphone-screen-mobile@1x.png"/>
       </div>
-      <div class="slider slider--white">
+      <div class="fact container">
+        <img class="fact__img" src="#" width="300" height="350"/>
+        <section class="fact__section">
+          <h3 class="fact__heading">Эффект на 24 часа!</h3>
+          <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="fact__link" href="#">Узнать больше об исследовании</a>
+        </section>
+      </div>
+      <div class="slider slider--white  container">
         <div class="slider__slides">
           <section class="slider__slide mention">
             <h3 class="mention__user-name">Николай Петров</h3>
+            <span class="mention__about-user">25 лет, водитель трамвая</span>
             <p class="mention__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </section>
           <section class="slider__slide mention">
             <h3 class="mention__user-name">Николай Петров</h3>
+            <span class="mention__about-user">25 лет, водитель трамвая</span>
             <p class="mention__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </section>
           <section class="slider__slide mention">
             <h3 class="mention__user-name">Николай Петров</h3>
+            <span class="mention__about-user">25 лет, водитель трамвая</span>
             <p class="mention__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </section>
         </div>
@@ -73,8 +86,8 @@
         <div class="slider__slides">
           <section class="slider__slide services-package">
             <div class="services-package__header">
-              <h3 class="services-package__name">Стандарт</h3>
-              <p class="services-package__price">3,99 USD</p>
+              <h3 class="services-package__name">База</h3>
+              <p class="services-package__price">1,99 USD</p>
             </div>
             <ul class="services-package__options">
               <li class="services-package__option">
@@ -107,8 +120,8 @@
           </section>
           <section class="slider__slide services-package">
             <div class="services-package__header">
-              <h3 class="services-package__name">Стандарт</h3>
-              <p class="services-package__price">3,99 USD</p>
+              <h3 class="services-package__name">Анлим</h3>
+              <p class="services-package__price">9,99 USD</p>
             </div>
             <ul class="services-package__options">
               <li class="services-package__option">
@@ -131,20 +144,22 @@
       </div>
     </main>
     <footer class="index-footer">
-      <div class="contacts">
+      <div class="contacts container">
         <p class="contacts__contact-us">Остались вопросы? <br />Свяжитесь с нами!</p>
-        <section class="contacts__block">
-          <h3 class="contacts__heading">Звоните:</h3>
-          <p class="contacts__info">+7 (812) 555-66-66</p>
-        </section>
-        <section class="contacts__block">
-          <h3 class="contacts__heading">Пишите:</h3>
-          <p class="contacts__info">mail@htmlacademy.ru</p>
-        </section>
-        <section class="contacts__block">
-          <h3 class="contacts__heading">Приезжайте в гости:</h3>
-          <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
-        </section>
+        <div class="contacts__items">
+          <section class="contacts__block">
+            <h3 class="contacts__heading">Звоните:</h3>
+            <p class="contacts__info">+7 (812) 555-66-66</p>
+          </section>
+          <section class="contacts__block">
+            <h3 class="contacts__heading">Пишите:</h3>
+            <p class="contacts__info">mail@htmlacademy.ru</p>
+          </section>
+          <section class="contacts__block">
+            <h3 class="contacts__heading">Приезжайте в гости:</h3>
+            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+          </section>
+        </div>
       </div>
       <div class="map">
 

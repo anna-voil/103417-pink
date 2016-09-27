@@ -17,4 +17,26 @@
     margin: 0;
     margin-bottom: 30px;
   }
+
+  @media (--mobile-widths) {}
+
+  @media (--tablet-widths) {
+    &__contact-us {
+      font-size: 40px;
+    }
+    
+    &__items {
+      display: flex;
+    }
+  }
+
+  @media (--desktop-widths) {
+    &__contact-us {
+      font-size: 50px;
+    }
+
+    &__items {
+      display: flex;
+    }
+  }
 }

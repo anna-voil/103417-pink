@@ -21,6 +21,7 @@
 @import "popup.css";
 @import "footer.css";
 @import "container.css";
+@import "fact.css";
 
 html {
   background: gray;

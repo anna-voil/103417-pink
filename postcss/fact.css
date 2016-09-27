@@ -1,0 +1,8 @@
+.fact {
+  display: flex;
+  justify-content: space-around;
+
+  @media (--mobile-widths) {
+    display: none;
+  }
+}

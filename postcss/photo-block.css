@@ -31,4 +31,8 @@
     text-transform: uppercase;
     margin: 20px;
   }
+
+  @media (--mobile-widths) {}
+  @media (--tablet-widths) {}
+  @media (--desktop-widths) {}
 }

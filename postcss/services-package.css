@@ -27,4 +27,20 @@
   &__option {
     list-style-type: none;
   }
+
+  @media (--mobile-widths) {
+
+  }
+
+  @media (--tablet-widths) {
+
+  }
+
+  @media (--desktop-widths) {
+    font-size: 18px;
+
+    &__prise {
+      font-size: 24px;
+    }
+  }
 }

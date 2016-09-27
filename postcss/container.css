@@ -1,5 +1,4 @@
 .container {
-align-items: center;
 
 @media (--mobile-widths) {
   padding: 0 20px;
