@@ -1,12 +1,25 @@
 .photos {
+  display: flex;
 
   &__item {
 
   }
 
-  
+  @media (--tablet-widths) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      width: 300px;
+    }
+  }
 
-  @media (--mobile-widths) {}
-  @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+  @media (--desktop-widths) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      width: 300px;
+      margin-bottom: 54px;
+    }
+  }
 }

@@ -1,0 +1,39 @@
+.main {
+  &__title {
+    height: 184px;
+  }
+
+  &__title p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  @media (--tablet-widths) {
+    &__title {
+      height: 228px;
+    }
+
+    &__title p {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  @media (--desktop-widths) {
+    &__title {
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__title p {
+      font-size: 19px;
+      margin: 0;
+      text-align: center;
+      line-height: 30px;
+      margin-top: 5px;
+    }
+  }
+}

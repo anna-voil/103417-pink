@@ -1,17 +1,27 @@
 .footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   &__logo {
     background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
     width: 150px;
     height: 40px;
-    margin: auto;
   }
 
   &__copyright {
   }
 
-  @media (--mobile-widths) {}
-  @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+  @media (--tablet-widths) {
+    flex-direction: row;
+    align-items: center;
+    justify-content:
+
+
+  }
+  @media (--desktop-widths) {
+    flex-direction: row;
+    align-items: center;
+
+  }
 }

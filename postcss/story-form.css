@@ -69,8 +69,7 @@
   }
 
   &__send-form {
-    display: block;
-    margin: auto;
+    
   }
 
   &__footnote {
@@ -79,5 +78,38 @@
 
   &__footnote span {
     color: $darkpink;
+  }
+
+  @media (--tablet-widths) {
+  }
+
+  @media (--desktop-widths) {
+    display: flex;
+    flex-wrap: wrap;
+    &>* {
+      flex: 100%;
+    }
+
+    &__text {
+      font-size: 18px;
+      height: 207px; /*ПОПРАВИТЬ*/
+    }
+
+    &__fieldset {
+      order: -2;
+      flex: 50%;
+    }
+
+    &__apps {
+      order: -1;
+      flex: 50%;
+    }
+
+    &__user-story {
+      flex: 100%;
+    }
+
+    &__send-form {
+    }
   }
 }

@@ -7,23 +7,24 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <nav class="nav">
-        <div class="nav__logo"></div>
-        <ul class="nav__items">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="foto.html">Фотографии</a></li>
-          <li class="nav__item"><a href="#">Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
-        </ul>
+        <div class="nav__wrapper container">
+          <div class="nav__logo"></div>
+          <ul class="nav__items">
+            <li class="nav__item"><a href="index.html">Главная</a></li>
+            <li class="nav__item"><a href="foto.html">Фотографии</a></li>
+            <li class="nav__item"><a href="#">Конкурс</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </div>
       </nav>
-      <h2 class="header__title">Конкурс на самое безбашеное путешествие с Пинк</h2>
+      <h2 class="header__title container">Конкурс на самое безбашеное путешествие с Пинк</h2>
     </header>
     <main class="main">
-      <form class="story-form">
-        <div class="story-form__text">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        </div>
+      <div class="main__text container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+      </div>
+      <form class="story-form container">
         <fieldset class="story-form__fieldset">
           <label class="story-form__row">
             <span class="story-form__caption">Фамилия:</span>
@@ -70,11 +71,13 @@
             <textarea class="story-form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
           </label>
         </fieldset>
-        <input class="story-form__send-form button button--green" type="submit" value="Отправить форму" />
-        <p class="story-form__footnote"><span>*</span> - Обязательные поля</p>
+        <div class="story-form__send-form">
+          <input class="story-form__button button button--green" type="submit" value="Отправить форму" />
+          <p class="story-form__footnote"><span>*</span> - Обязательные поля</p>
+        </div>
       </form>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__logo" title="PINK-logo"></div>
       <div class="footer__social social">
         <a class="social__link" href="#"><img/></a>

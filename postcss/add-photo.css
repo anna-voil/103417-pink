@@ -5,7 +5,15 @@
   &__filters {
   }
 
-  @media (--mobile-widths) {}
   @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+  @media (--desktop-widths) {
+    padding: 60px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+    align-content: center;
+
+    &__img {
+    }
+  }
 }

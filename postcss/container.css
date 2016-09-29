@@ -1,15 +1,16 @@
 .container {
+  margin: auto;
 
-@media (--mobile-widths) {
-  padding: 0 20px;
+  @media (--mobile-widths) {
+    width: 280px;
   }
 
   @media (--tablet-widths) {
-    padding: 0 40px;
+    width: 620px;
   }
 
   @media (--desktop-widths) {
-    padding: 0 130px;
+    width: 940px;
   }
 }
 

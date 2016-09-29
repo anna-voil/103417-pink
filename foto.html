@@ -8,34 +8,40 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav container">
-        <div class="nav__logo"></div>
-        <ul class="nav__items">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="foto.html">Фотографии</a></li>
-          <li class="nav__item"><a href="#">Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
-        </ul>
+      <nav class="nav">
+        <div class="nav__wrapper container">
+          <div class="nav__logo"></div>
+          <ul class="nav__items">
+            <li class="nav__item"><a href="index.html">Главная</a></li>
+            <li class="nav__item"><a href="foto.html">Фотографии</a></li>
+            <li class="nav__item"><a href="#">Конкурс</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </div>
       </nav>
       <h2 class="header__title">Фотографии пользователей</h2>
     </header>
-    <main>
-      <div class="offer container">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <main class="main">
+      <div class="main__title container">
+        <p>Взгляните на фотографии, которые выкладывают пользователи!<br/>Видите, как не хватает ваших?</p>
       </div>
-      <div class="photos">
-        <div class="photos__item photos__item--panorama photo-block photo-block--panorama">
-          <img class="photo-block__image" src="img/panorama-mobile@1x.jpg"/>
-          <div class="photo-block__username">Анна
-            <span class="photo-block__post-time">(5 минут назад)</span>
+      <div class="panorama">
+        <img class="panorama__img" src="img/panorama-mobile@1x.jpg"/>
+        <div class="container">
+          <div class="panorama__text-wrapper">
+            <div class="panorama__username">Анна
+              <span class="panorama__post-time">(5 минут назад)</span>
+            </div>
+            <div class="panorama__comment">
+              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
+            <label class="panorama__like">
+              <button class="panorama__like-button"></button> Нравится: 215
+            </label>
           </div>
-          <div class="photo-block__comment">
-            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          </div>
-          <label class="photo-block__like">
-            <button class="photo-block__like-button"></button> Нравится: 215
-          </label>
         </div>
+      </div>
+      <div class="photos container">
         <div class="photos__item photo-block">
           <img class="photo-block__image" src="img/photo-1-mobile@1x.jpg"/>
           <div class="photo-block__username">Левон
@@ -109,9 +115,9 @@
           </label>
         </div>
       </div>
-      <div class="photos__text">Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!</div>
-      <form class="add-photo">
-        <img class="add-photo__image" src="img/photo-7-mobile@1x.jpg"/>
+      <div class="photos__text offer container">Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!</div>
+      <form class="add-photo container">
+        <img class="add-photo__img" src="img/photo-7-mobile@1x.jpg"/>
         <div class="add-photo__filters">
           <button class="add-photo__filter"></button>
           <button class="add-photo__filter"></button>
@@ -124,7 +130,7 @@
         <button class="add-photo__reset button button--rounded button--pink" disabled>Отмена</button>
       </form>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__logo" title="PINK-logo"></div>
       <div class="footer__social social">
         <a class="social__link" href="#"><img/></a>

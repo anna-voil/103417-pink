@@ -1,7 +1,7 @@
 .header {
-  height: 730px;
+  min-height: 237px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-size: cover;
+  background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -38,6 +38,7 @@
     text-align: center;
     color: $bg_white;
     font-weight: lighter;
+    font-size: 24px;
   }
 
   @media (--mobile-widths) {
@@ -45,9 +46,14 @@
   }
 
   @media (--tablet-widths) {
+    height: 440px;
   }
 
   @media (--desktop-widths) {
+    height: 394px;
+    &__title {
+      font-size: 50px;
+    }
   }
 
 

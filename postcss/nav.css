@@ -1,5 +1,4 @@
 .nav {
-  align-items: center;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
 
@@ -32,29 +31,32 @@
   }
 
   @media (--tablet-widths) {
-    display: flex;
+    &__wrapper {
+      display: flex;
+    }
 
     &__items {
       display: flex;
+      align-items: center;
       flex: 1;
       justify-content: space-between;
+      font-weight: normal;
     }
-
   }
 
   @media (--desktop-widths) {
-    display: flex;
+    height: 110px;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+
+    }
 
     &__items {
       display: flex;
       flex: 1;
       justify-content: space-between;
+      font-weight: normal;
     }
   }
 }
-
-/*старый код*/
-/*
-
-  }
-  */
