@@ -1,4 +1,8 @@
 .apps {
   display: flex;
   flex-direction: column;
+
+  @media (--mobile-widths) {}
+  @media (--tablet-widths) {}
+  @media (--desktop-widths) {}
 }

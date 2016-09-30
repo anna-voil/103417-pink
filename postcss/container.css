@@ -1,0 +1,19 @@
+.container {
+  margin: auto;
+
+  @media (--mobile-widths) {
+    width: 280px;
+  }
+
+  @media (--tablet-widths) {
+    width: 620px;
+  }
+
+  @media (--desktop-widths) {
+    width: 940px;
+  }
+}
+
+  @custom-media --mobile-widths (max-width: 699px);
+  @custom-media --tablet-widths (min-width: 700px) and (max-width: 899px);
+  @custom-media --desktop-widths (min-width: 900px);

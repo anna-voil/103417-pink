@@ -4,24 +4,43 @@
 
   &__header {
     background: $darkblue;
+    padding: 25px 0;
     color: $bg_white;
     font-size: 18px;
   }
 
   &__name {
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     margin: 0;
   }
 
   &__price {
-    font-family: 'Myriad Pro Regular';
+    font-weight: lighter;
     font-size: 24px;
+    line-height: 30px;
     text-align: center;
     margin: 0;
   }
-  
+
   &__option {
     list-style-type: none;
+  }
+
+  @media (--mobile-widths) {
+
+  }
+
+  @media (--tablet-widths) {
+
+  }
+
+  @media (--desktop-widths) {
+    font-size: 18px;
+
+    &__prise {
+      font-size: 24px;
+    }
   }
 }

@@ -1,4 +1,11 @@
 .mention {
-  margin: $mobile-margin;
   text-align: center;
+
+  @media (--mobile-widths) {
+    &__about-user {
+      display: none;
+    }
+  }
+  @media (--tablet-widths) {}
+  @media (--desktop-widths) {}
 }

@@ -1,6 +1,8 @@
 .advantages {
-  padding: $mobile-margin;
-  background: $bg_lightgrey;
+  background: url(../img/bg-triangle-white.svg) top right no-repeat;
+  background-size: auto;
+  display: flex;
+  background-color: $bg_lightgrey;
 
   &__review {
     text-align: center;
@@ -12,5 +14,57 @@
 
   &__text {
     font-weight: normal;
+  }
+
+  @media (--mobile-widths) {
+    flex-direction: column;
+
+    &__img {
+      display: none;
+
+      &--last {
+        display: block;
+        order: 1;
+      }
+    }
+  }
+
+  @media (--tablet-widths) {
+    height: 480px;
+
+    &__img {
+      display: none;
+
+      &--last {
+        display: block;
+        order: -1;
+        flex-grow: 400px;
+      }
+    }
+
+  }
+
+  @media (--desktop-widths) {
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    &__img {
+
+    }
+    &__review {
+      width: 260px;
+      padding: 0 20px;
+    }
+
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
   }
 }

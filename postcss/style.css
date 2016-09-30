@@ -1,33 +1,52 @@
+@import "../node_modules/normalize.css/normalize.css";
 @import "variables.css";
-@import "header.css";
-@import "nav.css";
-@import "download.css";
-@import "offer.css";
-@import "advantages.css";
-@import "slider.css";
-@import "map.css";
-@import "fonts.css";
-@import "services-package.css";
-@import "contacts.css";
-@import "photos.css";
-@import "photo-block.css";
-@import "add-photo.css";
-@import "mention.css";
-@import "button.css";
-@import "story-form.css";
+
 @import "achievement.css";
+@import "add-photo.css";
+@import "advantages.css";
 @import "apps.css";
-@import "popup.css";
+@import "button.css";
+@import "contacts.css";
+@import "container.css";
+@import "download.css";
+@import "fact.css";
+@import "fonts.css";
 @import "footer.css";
+@import "header.css";
+@import "main.css";
+@import "map.css";
+@import "mention.css";
+@import "nav.css";
+@import "offer.css";
+@import "outlines.css";
+@import "panorama.css";
+@import "photo-block.css";
+@import "photos.css";
+@import "popup.css";
+@import "services-package.css";
+@import "slider.css";
+@import "story-form.css";
 
 html {
-  background: gray;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
-  width: 320px;
-  margin: auto;
-  background: #fff;
+  margin: 0 auto;
   font-family: 'Open Sans';
   color: $darkblue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
 }

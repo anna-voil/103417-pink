@@ -1,8 +1,19 @@
 .add-photo {
   text-align: center;
   background: $bg_lightgrey;
-  padding: $mobile-margin;
 
   &__filters {
+  }
+
+  @media (--tablet-widths) {}
+  @media (--desktop-widths) {
+    padding: 60px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+    align-content: center;
+
+    &__img {
+    }
   }
 }
