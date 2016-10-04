@@ -1,9 +1,9 @@
-.apps {
-  height: 340px;
-  padding: 35px 0;
+.achievements {
   background: $bg_lightgrey;
+  padding-top: 40px;
 
-  &__wrapper {
+  &__achieves {
+    height: 100%;
     border: none;
   }
 
@@ -16,22 +16,23 @@
   }
 
   &__items {
-    padding-top: 46px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 49px;
   }
 
   &__item {
-    display: block;
-    flex-basis: 75px;
-    padding-left: 70px;
+    flex-basis: 82px;
     font-size: 18px;
+    padding-left: 70px;
   }
 
-  &__radio-btn {
+  &__checkbox {
     display: none;
   }
+
 
 
   @media (--tablet-widths) {}

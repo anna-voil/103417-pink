@@ -1,17 +1,23 @@
 .main {
   &__title {
-    height: 184px;
+    text-align: center;
+    padding-top: 46px;
+    margin-bottom: 35px;
   }
 
   &__title p {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    line-height: 30px;
+  }
+  &__title span {
+    display: none;
   }
 
   @media (--tablet-widths) {
     &__title {
-      height: 228px;
+      padding-top: 100px;
     }
 
     &__title p {
@@ -22,10 +28,7 @@
 
   @media (--desktop-widths) {
     &__title {
-      height: 240px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding-top: 100px;
     }
 
     &__title p {
@@ -33,7 +36,6 @@
       margin: 0;
       text-align: center;
       line-height: 30px;
-      margin-top: 5px;
     }
   }
 }

@@ -1,0 +1,27 @@
+.user-story {
+  height: 320px;
+  padding-top: 53px;
+
+  &__wrapper {
+    border: none;
+  }
+
+  &__header {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $darkpink;
+  }
+
+  &__textarea {
+    width: 280px;
+    height: 200px;
+    margin-top: 20px;
+    border: solid 2px $bg_lightgrey;
+    padding: 13px 19px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}
