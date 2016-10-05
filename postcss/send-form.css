@@ -1,0 +1,13 @@
+.send-form {
+  text-align: center;
+  margin-bottom: 62px;
+
+  &__footnote {
+    margin-top: 26px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__footnote span {
+    color: $darkpink;
+  }
+}
