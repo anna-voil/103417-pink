@@ -1,18 +1,44 @@
 .header {
   background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-size: 100% auto;
+  background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
 
+
+
   &__title {
+    font-size: 24px;
     display: block;
-    padding-bottom: 53px;
+    padding: 30px 20px 54px 20px;
+    line-height: 29px;
     text-align: center;
     color: $bg_white;
     font-weight: lighter;
-    font-size: 24px;
   }
 
+  @media (--tablet-widths) {
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 70px 40px 80px 40px;
+    }
+  }
+
+
+  @media (--desktop-widths) {
+
+  }
+
+
+
+
+
+
+
+
+
+
+/*   ФОН ХЕДЕРА ГЛАВНОЙ СТРАНИЦЫ
   &--index {
   background-image: url(../img/iphone-hand-mobile@1x.png),
                     url(../img/bg-back-mobile@1x.jpg);
@@ -31,17 +57,6 @@
     background-position: bottom right 157px, top center;
   }
 }
-
-  &__text {
-    text-align: center;
-    background-color: $bg_white;
-    position: absolute;
-    bottom: 0;
-    height: 270px;
-  }
-
-
-
-
+ФОН ХЕДЕРА ГЛАВНОЙ СТРАНИЦЫ  */
 
 }

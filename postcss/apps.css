@@ -38,7 +38,7 @@
     width: 39px;
     height: 39px;
     border: solid 2px $borders;
-    /*background: $bg_white;*/
+    background: $bg_white;
     border-radius: 50%;
   }
 
@@ -51,15 +51,41 @@
     height: 15px;
     background: $darkpink;
     border-radius: 50%;
-
   }
-
 
   &__radio-btn {
     display: none;
   }
 
 
-  @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+  @media (--tablet-widths) {
+    background: none;
+
+    &__wrapper {
+      border: solid 2px $borders;
+    }
+
+    &__items {
+      padding: 40px 60px;
+    }
+
+
+
+
+
+
+  }
+
+  @media (--desktop-widths) {
+    background: none;
+  }
+
+
+
+
+
+
+
+
+
 }

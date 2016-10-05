@@ -2,9 +2,32 @@
 .story-form {
 
   @media (--tablet-widths) {
+    display: flex;
+    justify-content: row-reverse;
+    flex-direction: column-reverse;
+
+    &>* {
+      flex: 100%;
+
+    }
+
+    &__username {
+      order: 1;
+    }
+
+    &__apps {
+    }
+
+    &__user-story {
+      order: -1;
+    }
+
+    &__send-form {
+      order: -2;
+    }
   }
 
-  @media (--desktop-widths) {
+  /*@media (--desktop-widths) {
     display: flex;
     flex-wrap: wrap;
     &>* {
@@ -26,7 +49,7 @@
     }
 
     &__send-form {
-      
+
     }
-  }
+  }*/
 }

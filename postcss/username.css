@@ -35,4 +35,33 @@
     color: $darkblue;
   }
 
+  @media (--tablet-widths) {
+    padding: 0;
+
+    &__caption {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: baseline;
+
+    }
+
+    &__textfield {
+      margin: 0;
+    }
+
+  }
+
+  @media (--desktop-widths) {
+
+
+  }
+
+
+
+
+
 }

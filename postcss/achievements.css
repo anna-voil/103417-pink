@@ -41,7 +41,7 @@
     border: solid 2px $borders;
     background: $bg_white;
   }
-  
+
   &__item::after {
     content: "";
     position: absolute;
@@ -58,8 +58,16 @@
     display: none;
   }
 
+  @media (--tablet-widths) {
+    background: none;
+  }
+
+  @media (--desktop-widths) {
+    background: none;
+  }
 
 
-  @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+
+
+
 }
