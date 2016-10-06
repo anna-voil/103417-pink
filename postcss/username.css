@@ -36,7 +36,14 @@
     color: $darkblue;
   }
 
+  @media (--mobile-widths) {
+    margin: auto;
+    width: 280px;
+  }
+
   @media (--tablet-widths) {
+    width: 620px;
+    margin: auto;
     padding: 36px 0 40px 0;
     margin-bottom: 19px;
     display: flex-column;
@@ -48,20 +55,68 @@
 
     &__row {
       display: flex;
-      align-items: baseline;
+      align-items: baseline; /*ПРОВЕРИТЬ*/
+    }
 
+    &__textfield {
+      margin: 0;
+    }
+  }
+
+
+
+
+  @media (--desktop-widths) {
+    margin-top: 2px;
+    padding: 36px 0 40px 0;
+    margin-bottom: 19px;
+    display: flex;
+
+    &__caption {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: baseline; /*ПРОВЕРИТЬ*/
     }
 
     &__textfield {
       margin: 0;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
-  @media (--desktop-widths) {
 
 
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

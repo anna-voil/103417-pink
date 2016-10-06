@@ -78,12 +78,32 @@
     &__item {
       padding-left: 60px;
     }
-    
   }
+
+
+
 
   @media (--desktop-widths) {
     background: none;
-  }
+    padding-top: 58px;
+
+    &__achieves {
+      border: solid 2px $borders;
+    }
+
+    &__items {
+      height: 220px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 58px;
+    }
+
+    &__item {
+      flex-basis: 40%;
+      padding-left: 60px;
+    }
+   }
 
 
 

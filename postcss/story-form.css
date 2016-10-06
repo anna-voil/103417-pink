@@ -24,23 +24,23 @@
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
+    justify-content: center;
 
     &__username {
-      width: 50%;
+      width: 435px;
+      margin-right: 70px;
       order: 1;
     }
 
     &__apps {
-      width: 50%;
+      width: 435px;
     }
 
     &__user-story {
-      width: 100%;
       order: -1;
     }
 
     &__send-form {
-      width: 100%;
       order: -2;
     }
 

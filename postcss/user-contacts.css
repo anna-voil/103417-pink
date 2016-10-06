@@ -1,5 +1,5 @@
 .user-contacts {
-  height: 295px;
+  /*height: 295px;*/
   padding: 30px 0;
   border: none;
 
@@ -66,21 +66,41 @@
       margin: 0;
       margin-bottom: 18px;
     }
-
-
-
-
-
-
-
-
-
-
   }
 
 
 
-  @media (--desktop-widths) {}
+  @media (--desktop-widths) {
+    border: solid 2px $borders;
+    height: 170px;
+    padding: 38px 58px 0 58px;
+
+    &__header {
+      display: block;
+      margin: 0 20px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $darkpink;
+    }
+    &__wrapper {
+      /*height: 230px;*/
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-basis: calc(50% - 35px);
+    }
+
+    &__textfield {
+      margin: 0;
+      margin-bottom: 18px;
+    }
+  }
 
 
 

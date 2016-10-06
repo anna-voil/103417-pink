@@ -12,7 +12,7 @@ body {
 }
   @media (--desktop-widths) {
   /*ФОТО*/ /*background: url(../img/outlines/pink-photo-desktop.jpg) no-repeat 50% 0px;*/
-  /*ФОРМА*/ /*background: url(../img/outlines/pink-form-desktop.jpg) no-repeat 50% 0px;*/
+  /*ФОРМА*/ background: url(../img/outlines/pink-form-desktop.jpg) no-repeat 50% 0px;
     background-size: 1200px auto;
   }
 }

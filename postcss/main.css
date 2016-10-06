@@ -32,7 +32,7 @@
 
   @media (--desktop-widths) {
     &__title {
-      padding: 93px 84px;
+      padding: 93px 84px 10px 84px;
     }
 
     &__title p {

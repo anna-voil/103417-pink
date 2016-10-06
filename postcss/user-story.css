@@ -40,11 +40,29 @@
       width: 500px;
       height: 193px;
     }
-
-
-
-
   }
+
+    @media (--desktop-widths) {
+      padding-top: 58px;
+
+      &__wrapper {
+        height: 224px;
+        padding: 0 58px;
+        border: solid 2px $borders;
+      }
+
+      &__textarea {
+        margin-top: 35px;
+        width: 100%;
+        height: 128px;
+      }
+
+
+
+
+    }
+
+
 
 
 

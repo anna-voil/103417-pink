@@ -57,6 +57,12 @@
     display: none;
   }
 
+  @media (--mobile-widths) {
+    &__wrapper {
+      margin: auto;
+      width: 280px;
+    }
+  }
 
   @media (--tablet-widths) {
     padding: 0;
@@ -64,6 +70,8 @@
     margin-bottom: 23px;
 
     &__wrapper {
+      width: 620px;
+      margin: auto;
       height: 305px;
       border: solid 2px $borders;
     }
@@ -75,16 +83,48 @@
     &__item {
       padding-left: 59px;
     }
-
-
-
-
-
-
   }
 
+
+
+
+
+
+
+
   @media (--desktop-widths) {
+    padding: 0;
     background: none;
+    margin-bottom: 23px;
+
+    &__wrapper {
+      margin: 0;
+      height: 305px;
+      border: solid 2px $borders;
+    }
+
+    &__items {
+      padding: 55px 58px 7px 74px;
+    }
+
+    &__item {
+      padding-left: 59px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
 

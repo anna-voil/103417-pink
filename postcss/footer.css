@@ -27,8 +27,14 @@
 
 
   @media (--desktop-widths) {
-    height: 224px; /*ПРОВЕРИТЬ ПОЗИЦИОНИРОВАНИЕ ПО align-items ФЛЕКСОВ*/
+    height: 152px; /*ПРОВЕРИТЬ ПОЗИЦИОНИРОВАНИЕ ПО align-items ФЛЕКСОВ*/
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    &__copyright {
+      font-size: 18px;
+    }
+
   }
 }
