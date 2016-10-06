@@ -29,9 +29,58 @@
     color: $darkblue;
   }
 
+  &__header {
+    display: none;
+  }
+
+  @media (--tablet-widths) {
+    border: solid 2px $borders;
+    height: 317px;
+    padding: 38px 58px 0 58px;
+
+    &__header {
+      display: block;
+      margin: 0 20px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $darkpink;
+    }
+    &__wrapper {
+      height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__caption {
+    }
+
+    &__textfield {
+      margin: 0;
+      margin-bottom: 18px;
+    }
 
 
 
+
+
+
+
+
+
+
+  }
+
+
+
+  @media (--desktop-widths) {}
 
 
 

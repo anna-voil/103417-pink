@@ -26,6 +26,24 @@
 
 
   @media (--tablet-widths) {
+    padding-top: 58px;
+    margin-bottom: 90px;
+
+    &__wrapper {
+      height: 300px;
+      padding: 0 58px;
+      border: solid 2px $borders;
+    }
+
+    &__textarea {
+      margin-top: 38px;
+      width: 500px;
+      height: 193px;
+    }
+
+
+
+
   }
 
 

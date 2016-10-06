@@ -10,4 +10,20 @@
   &__footnote span {
     color: $darkpink;
   }
+
+  @media (--tablet-widths) {
+    height: 94px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__footnote {
+      margin: 0;
+    }
+
+
+  }
+
+
 }

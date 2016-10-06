@@ -26,7 +26,7 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
       </div>
       <form class="story-form">
-        <fieldset class="story-form__username username container">
+        <div class="story-form__username username container">
           <label class="username__row">
             <span class="username__caption">Фамилия:</span>
             <input class="username__textfield" type="text" placeholder="Укажите фамилию"/>
@@ -39,8 +39,8 @@
             <span class="username__caption">Отчество:</span>
             <input class="username__textfield" type="text" placeholder="Ну и отчество тоже"/>
           </label>
-        </fieldset>
-        <div class="achievements">
+        </div>
+        <div class="story-form__achievements achievements">
           <fieldset class="achievements__achieves container">
             <legend class="achievements__header">Ваши безбашенные достижения в путешествии</legend>
             <div class="achievements__items">
@@ -53,17 +53,20 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="user-contacts container">
-          <label class="user-contacts__row">
-            <span class="user-contacts__caption">Номерок телефончика</span>
-            <input class="user-contacts__textfield" type="tel" placeholder="Номер, пожалуйста"/>
-          </label>
-          <label class="user-contacts__row">
-            <span class="user-contacts__caption">Адресок почты</span>
-            <input class="user-contacts__textfield" type="email" placeholder="Введите почту"/>
-          </label>
+        <fieldset class="story-form__user-contacts user-contacts container">
+          <legend class="user-contacts__header">Контактная информация</legend>
+          <div class="user-contacts__wrapper">
+            <label class="user-contacts__row">
+              <span class="user-contacts__caption">Номерок телефончика</span>
+              <input class="user-contacts__textfield" type="tel" placeholder="Номер, пожалуйста"/>
+            </label>
+            <label class="user-contacts__row">
+              <span class="user-contacts__caption">Адресок почты</span>
+              <input class="user-contacts__textfield" type="email" placeholder="Введите почту"/>
+            </label>
+          </div>
         </fieldset>
-        <div class="apps">
+        <div class="story-form__apps apps">
           <fieldset class="apps__wrapper container">
             <legend class="apps__header">С каким приложением путешествовали?</legend>
             <div class="apps__items">

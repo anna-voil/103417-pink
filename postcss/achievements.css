@@ -60,6 +60,25 @@
 
   @media (--tablet-widths) {
     background: none;
+    padding-top: 58px;
+
+    &__achieves {
+      height: 560px;
+
+    }
+
+    &__items {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 55px 60px 0 60px;
+    }
+
+    &__item {
+      padding-left: 60px;
+    }
+    
   }
 
   @media (--desktop-widths) {

@@ -25,7 +25,7 @@
   &__item {
     position: relative;
     display: block;
-    flex-basis: 75px;
+    flex-basis: 74px;
     padding-left: 70px;
     font-size: 18px;
   }
@@ -59,14 +59,21 @@
 
 
   @media (--tablet-widths) {
+    padding: 0;
     background: none;
+    margin-bottom: 23px;
 
     &__wrapper {
+      height: 305px;
       border: solid 2px $borders;
     }
 
     &__items {
-      padding: 40px 60px;
+      padding: 55px 58px 7px 58px;
+    }
+
+    &__item {
+      padding-left: 59px;
     }
 
 

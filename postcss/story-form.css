@@ -1,4 +1,3 @@
-
 .story-form {
 
   @media (--tablet-widths) {
@@ -6,16 +5,8 @@
     justify-content: row-reverse;
     flex-direction: column-reverse;
 
-    &>* {
-      flex: 100%;
-
-    }
-
     &__username {
       order: 1;
-    }
-
-    &__apps {
     }
 
     &__user-story {
@@ -27,29 +18,35 @@
     }
   }
 
-  /*@media (--desktop-widths) {
+
+
+  @media (--desktop-widths) {
     display: flex;
-    flex-wrap: wrap;
-    &>* {
-      flex: 100%;
-    }
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
 
     &__username {
-      order: -2;
-      flex: 50%;
+      width: 50%;
+      order: 1;
     }
 
     &__apps {
-      order: -1;
-      flex: 50%;
+      width: 50%;
     }
 
     &__user-story {
-      flex: 100%;
+      width: 100%;
+      order: -1;
     }
 
     &__send-form {
-
+      width: 100%;
+      order: -2;
     }
-  }*/
+
+
+
+
+  }
+
 }

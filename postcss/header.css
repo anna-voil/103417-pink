@@ -26,7 +26,12 @@
 
 
   @media (--desktop-widths) {
-
+    background-size: 100% auto;
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 64px 40px 100px 40px;
+    }
   }
 
 

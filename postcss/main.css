@@ -28,36 +28,22 @@
     &__title span {
       display: block;
     }
-
-
-
-
-
-
-
   }
-
-
-
-
-
-
-
 
   @media (--desktop-widths) {
     &__title {
-      padding-top: 100px;
+      padding: 93px 84px;
     }
 
     &__title p {
-      display: block;
+      display: inline-block;
       font-size: 19px;
       margin: 0;
       text-align: center;
       line-height: 30px;
     }
     &__title span {
-      display: block;
+      display: inline-block;
     }
   }
 }
