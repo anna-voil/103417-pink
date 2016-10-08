@@ -7,13 +7,49 @@
 
   &--rounded {
     border: solid 3px $bg_white;
-    border-radius: 27px;
+    border-radius: 30px;
     background: none;
+
+    &:hover {
+      background-color: $bg_white;
+      color: $darkpink;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 
   &--pink {
     border: solid 3px $darkpink;
     color: $darkpink;
+
+    &:hover {
+      background-color: $darkpink;
+      color: $bg_white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+
+  }
+
+  &__reset {
+    border: solid 3px $darkblue;
+    background: none;
+    color: $darkblue;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: rgba(181, 185, 190, 0.3);
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--green {
@@ -22,14 +58,19 @@
     text-transform: uppercase;
     background: $btn_green;
 
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      background-color: #1c9b5e;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
     @media (--desktop-widths),
     @media (--tablet-widths) {
       border-radius: 3px;
       width: 300px;
     }
-
-
-
-
   }
 }

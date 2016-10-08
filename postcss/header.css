@@ -43,13 +43,17 @@
 
 
 
-/*   ФОН ХЕДЕРА ГЛАВНОЙ СТРАНИЦЫ
   &--index {
   background-image: url(../img/iphone-hand-mobile@1x.png),
                     url(../img/bg-back-mobile@1x.jpg);
   background-size: auto, cover;
   background-position: top 175px left, top center;
   background-repeat: no-repeat;
+
+  @media (--mobile-widths) {
+    height: 734px;
+    position: relative;
+  }
 
   @media (--tablet-widths) {
     background-size: 470px auto, cover;
@@ -62,6 +66,5 @@
     background-position: bottom right 157px, top center;
   }
 }
-ФОН ХЕДЕРА ГЛАВНОЙ СТРАНИЦЫ  */
 
 }

@@ -33,6 +33,11 @@
   }
 
   @media (--tablet-widths) {
+    display: table;
+
+    &__header {
+      display:table-row;
+    }
 
   }
 

@@ -6,6 +6,12 @@
       display: none;
     }
   }
-  @media (--tablet-widths) {}
-  @media (--desktop-widths) {}
+  @media (--tablet-widths) {
+    flex-shrink: 0;
+    width: 620px;
+  }
+  @media (--desktop-widths) {
+    flex-shrink: 0;
+    width: 940px;
+  }
 }

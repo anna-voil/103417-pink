@@ -116,19 +116,31 @@
         </div>
       </div>
       <div class="photos__text offer container">Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!</div>
-      <form class="add-photo container">
-        <img class="add-photo__img" src="img/photo-7-mobile@1x.jpg"/>
-        <div class="add-photo__filters">
-          <button class="add-photo__filter"></button>
-          <button class="add-photo__filter"></button>
-          <button class="add-photo__filter"></button>
-          <div class="add-photo__bar-toggle bar-toggle">
-            <div class="bar-toggle__toggle"></div>
+      <div class="add-photo">
+        <form class="add-photo__wrapper container">
+          <img class="add-photo__img" src="img/photo-7-mobile@1x.jpg"/>
+          <div class="add-photo__add-filters">
+            <div class="add-photo__filters-wrapper">
+              <div class="add-photo__filter-row">
+                <button class="add-photo__filter"></button>
+                <div class="add-photo__toggle"></div>
+              </div>
+              <div class="add-photo__filter-row">
+                <button class="add-photo__filter"></button>
+                <div class="add-photo__toggle"></div>
+              </div>
+              <div class="add-photo__filter-row">
+                <button class="add-photo__filter"></button>
+                <div class="add-photo__toggle"></div>
+              </div>
+            </div>
+            <div class="btns-wrapper">
+              <input class="add-photo__send-photo button button--rounded button--pink" type="submit" value="Запостить" />
+              <button class="add-photo__reset button button--rounded button--cancel" disabled>Отмена</button>
+            </div>
           </div>
-        </div>
-        <input class="add-photo__send-photo button button--rounded button--pink" type="submit" value="Запостить" />
-        <button class="add-photo__reset button button--rounded button--pink" disabled>Отмена</button>
-      </form>
+        </form>
+      </div>
     </main>
     <footer class="footer container">
       <div class="footer__logo" title="PINK-logo"></div>

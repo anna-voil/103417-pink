@@ -1,12 +1,9 @@
 .advantages {
   background: url(../img/bg-triangle-white.svg) top right no-repeat;
   background-size: auto;
-  display: flex;
   background-color: $bg_lightgrey;
 
-  &__review {
-    text-align: center;
-  }
+
 
   &__heding {
     font-weight: bold;
@@ -17,46 +14,45 @@
   }
 
   @media (--mobile-widths) {
+    &__wrapper {
+    display: flex;
     flex-direction: column;
-
-    &__img {
-      display: none;
-
-      &--last {
-        display: block;
-        order: 1;
-      }
-    }
   }
 
+  &__review {
+    text-align: center;
+  }
+
+}
+
+
   @media (--tablet-widths) {
-    height: 480px;
-
-    &__img {
-      display: none;
-
-      &--last {
-        display: block;
-        order: -1;
-        flex-grow: 400px;
-      }
+    &__wrapper {
+      height: 480px;
+      width: 50%;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
     }
+
+    &__review {
+      text-align: left;
+    }
+
 
   }
 
   @media (--desktop-widths) {
-    height: 600px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-
-    &__img {
-
+    &__wrapper {
+      height: 600px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
     }
+
     &__review {
       width: 260px;
-      padding: 0 20px;
+      text-align: center;
     }
 
     &__heading {

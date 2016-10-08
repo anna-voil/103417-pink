@@ -4,8 +4,35 @@
     display: flex;
     justify-content: center;
   }
-  
+
   &--gray {
     background: $bg_lightgrey;
   }
+
+  @media (--tablet-widths) {
+    &--white &__slides {  /*РАБОТА СЛАЙДЕРА*/
+        display: flex;
+        overflow: hidden;
+    }
+    &--gray &__slide {
+      display: table-cell;
+    }
+
+    &--gray &__header {
+      
+    }
+
+
+  }
+
+
+  @media (--desktop-widths) {
+    &--white {  /*РАБОТА СЛАЙДЕРА*/
+      .slider__slides {
+        display: flex;
+        overflow: hidden;
+      }
+    }
+  }
+
 }
