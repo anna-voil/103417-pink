@@ -5,34 +5,19 @@
     justify-content: center;
   }
 
-  &--gray {
-    background: $bg_lightgrey;
+  &__slides {  /*РАБОТА СЛАЙДЕРА*/
+      width: 100%;
+      display: flex;
+      overflow: scroll;
   }
 
-  @media (--tablet-widths) {
-    &--white &__slides {  /*РАБОТА СЛАЙДЕРА*/
-        display: flex;
-        overflow: hidden;
-    }
-    &--gray &__slide {
-      display: table-cell;
-    }
-
-    &--gray &__header {
-      
-    }
+  @media (--mobile-widths) {}
 
 
-  }
+  @media (--tablet-widths) {}
 
 
-  @media (--desktop-widths) {
-    &--white {  /*РАБОТА СЛАЙДЕРА*/
-      .slider__slides {
-        display: flex;
-        overflow: hidden;
-      }
-    }
-  }
+  @media (--desktop-widths) {}
+
 
 }

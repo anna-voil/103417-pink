@@ -21,7 +21,6 @@
   }
   @media (--tablet-widths) {
     background: none;
-    width: 300px;
 
     &__header {
       font-weight: lighter;
@@ -30,7 +29,6 @@
   }
 
   @media (--desktop-widths) {
-    width: 300px;
     background: none;
 
 
