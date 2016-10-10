@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 
   &__logo {
     background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
@@ -9,19 +9,33 @@
     height: 40px;
   }
 
+
   &__copyright {
+    height: 34px;
+    font-size: 14px;
+  }
+
+  @media (--mobile-widths) {
+    display: none;
   }
 
   @media (--tablet-widths) {
+    height: 128px;
     flex-direction: row;
     align-items: center;
-    justify-content:
-
-
+    margin-bottom: 0;
+    justify-content: space-between;
   }
+
   @media (--desktop-widths) {
+    height: 152px; /*ПРОВЕРИТЬ ПОЗИЦИОНИРОВАНИЕ ПО align-items ФЛЕКСОВ*/
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    &__copyright {
+      font-size: 18px;
+    }
 
   }
 }

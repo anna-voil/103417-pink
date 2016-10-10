@@ -1,115 +1,52 @@
-.story-form fieldset {
-  border: none;
-}
-
 .story-form {
-  &__item {
-  }
-
-  &__text {
-    text-align: center;
-  }
-
-  &__fieldset {
-    display: flex;
-  }
-
-  &__row {
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $darkpink;
-  }
-
-  &__caption {
-    margin-left: 20px;
-  }
-
-  &__textfield {
-    width: 260px;
-    height: 60px;
-    padding-left: 20px;
-    border: solid 2px $bg_lightgrey;
-    display: block;
-    font-size: 18px;
-    font-weight: normal;
-  }
-
-  &__textfield::placeholder,
-  &__textarea::placeholder {
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-weight: normal;
-    color: $darkblue;
-  }
-
-  &__header {
-    text-align: center;
-    font-weight: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $darkpink;
-  }
-
-  &__achievements {
-    background: $bg_lightgrey;
-  }
-
-  &__apps {
-    background: $bg_lightgrey;
-  }
-
-  &__user-story {
-    text-align: center;
-  }
-
-  &__textarea {
-    width: 280px;
-    height: 200px;
-  }
-
-  &__send-form {
-    
-  }
-
-  &__footnote {
-    text-align: center;
-  }
-
-  &__footnote span {
-    color: $darkpink;
-  }
 
   @media (--tablet-widths) {
-  }
-
-  @media (--desktop-widths) {
     display: flex;
-    flex-wrap: wrap;
-    &>* {
-      flex: 100%;
-    }
+    justify-content: row-reverse;
+    flex-direction: column-reverse;
 
-    &__text {
-      font-size: 18px;
-      height: 207px; /*ПОПРАВИТЬ*/
-    }
-
-    &__fieldset {
-      order: -2;
-      flex: 50%;
-    }
-
-    &__apps {
-      order: -1;
-      flex: 50%;
+    &__username {
+      order: 1;
     }
 
     &__user-story {
-      flex: 100%;
+      order: -1;
     }
 
     &__send-form {
+      order: -2;
     }
   }
+
+
+
+  @media (--desktop-widths) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+    &__username {
+      width: 435px;
+      margin-right: 70px;
+      order: 1;
+    }
+
+    &__apps {
+      width: 435px;
+    }
+
+    &__user-story {
+      order: -1;
+    }
+
+    &__send-form {
+      order: -2;
+    }
+
+
+
+
+  }
+
 }

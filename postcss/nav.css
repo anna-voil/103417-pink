@@ -1,6 +1,13 @@
 .nav {
+  height: 66px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 
   &__items a {
     color: $bg_white;
@@ -19,8 +26,6 @@
     background-origin: content-box;
   }
 
-  @media (--mobile-widths) {
-    height: 65px;
     &__logo {
       background:;
     }
@@ -28,9 +33,11 @@
     &__items {
       display: none;
     }
-  }
+
 
   @media (--tablet-widths) {
+    height: 110px;
+
     &__wrapper {
       display: flex;
     }
@@ -46,10 +53,10 @@
 
   @media (--desktop-widths) {
     height: 110px;
+
     &__wrapper {
       display: flex;
       align-items: center;
-
     }
 
     &__items {

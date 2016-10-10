@@ -22,67 +22,78 @@
       <h2 class="header__title container">Конкурс на самое безбашеное путешествие с Пинк</h2>
     </header>
     <main class="main">
-      <div class="main__text container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+      <div class="main__title container">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
       </div>
-      <form class="story-form container">
-        <fieldset class="story-form__fieldset">
-          <label class="story-form__row">
-            <span class="story-form__caption">Фамилия:</span>
-            <input class="story-form__textfield" type="text" placeholder="Укажите фамилию"/>
+      <form class="story-form">
+        <div class="story-form__username username">
+          <label class="username__row">
+            <span class="username__caption">Фамилия:</span>
+            <input class="username__textfield" type="text" placeholder="Укажите фамилию"/>
           </label>
-          <label class="story-form__row">
-            <span class="story-form__caption">Имя:</span>
-            <input class="story-form__textfield" type="text" placeholder="Введите ваше имя"/>
+          <label class="username__row">
+            <span class="username__caption">Имя:</span>
+            <input class="username__textfield" type="text" placeholder="Введите ваше имя"/>
           </label>
-          <label class="story-form__row">
-            <span class="story-form__caption">Отчество:</span>
-            <input class="story-form__textfield" type="text" placeholder="Ну и отчество тоже"/>
+          <label class="username__row">
+            <span class="username__caption">Отчество:</span>
+            <input class="username__textfield" type="text" placeholder="Ну и отчество тоже"/>
           </label>
-        </fieldset>
-        <fieldset class="story-form__achievements">
-          <h3 class="story-form__header">Ваши безбашенные<br/> достижения в путешествии</h3>
-          <div class="achievement">
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Сделал селфи с акулой</label>
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Обгорел на пляже</label>
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Видел Чака Норриса</label>
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Накупил сувениров</label>
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Удержал башню</label>
-            <label class="achievement__item"><input class="achievement__checkbox" type="checkbox"/>Разгромил отель</label>
+        </div>
+        <div class="story-form__achievements achievements">
+          <fieldset class="achievements__achieves container">
+            <legend class="achievements__header">Ваши безбашенные достижения в путешествии</legend>
+            <div class="achievements__items">
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Сделал селфи с акулой</label>
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Обгорел на пляже</label>
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Видел Чака Норриса</label>
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Накупил сувениров</label>
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Удержал башню</label>
+              <label class="achievements__item"><input class="achievements__checkbox" type="checkbox"/>Разгромил отель</label>
+            </div>
+          </fieldset>
+        </div>
+        <fieldset class="story-form__user-contacts user-contacts container">
+          <legend class="user-contacts__header">Контактная информация</legend>
+          <div class="user-contacts__wrapper">
+            <label class="user-contacts__row">
+              <span class="user-contacts__caption">Номерок телефончика</span>
+              <input class="user-contacts__textfield" type="tel" placeholder="Номер, пожалуйста"/>
+            </label>
+            <label class="user-contacts__row">
+              <span class="user-contacts__caption">Адресок почты</span>
+              <input class="user-contacts__textfield" type="email" placeholder="Введите почту"/>
+            </label>
           </div>
         </fieldset>
-        <fieldset class="story-form__user-contacts">
-          <label class="story-form__row">
-            <span class="story-form__caption">Номерок телефончика</span>
-            <input class="story-form__textfield" type="tel" placeholder="Номер, пожалуйста"/>
-          </label>
-          <label class="story-form__row">
-            <span class="story-form__caption">Адресок почты</span>
-            <input class="story-form__textfield" type="email" placeholder="Введите почту"/>
-          </label>
-        </fieldset>
-        <fieldset class="story-form__apps apps">
-          <h3 class="story-form__header">С каким приложением путешествовали?</h3>
-          <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Pink для iOS</label>
-          <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Pink на Android</label>
-          <label class="apps__item"><input class="apps__radiobutton" type="radio"/>Windows Phone</label>
-        </fieldset>
-        <fieldset class="story-form__user-story">
-          <label class="story-form__row">Опишите свои эмоции
-            <textarea class="story-form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
-          </label>
-        </fieldset>
-        <div class="story-form__send-form">
-          <input class="story-form__button button button--green" type="submit" value="Отправить форму" />
-          <p class="story-form__footnote"><span>*</span> - Обязательные поля</p>
+        <div class="story-form__apps apps">
+          <fieldset class="apps__wrapper">
+            <legend class="apps__header">С каким приложением путешествовали?</legend>
+            <div class="apps__items">
+              <label class="apps__item"><input class="apps__radio-btn" type="radio"/>Pink для iOS</label>
+              <label class="apps__item"><input class="apps__radio-btn" type="radio"/>Pink на Android</label>
+              <label class="apps__item"><input class="apps__radio-btn" type="radio"/>Windows Phone</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="story-form__user-story user-story container">
+          <fieldset class="user-story__wrapper">
+            <legend class="user-story__header">Опишите свои эмоции</legend>
+              <textarea class="user-story__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          </fieldset>
+        </div>
+        <div class="story-form__send-form send-form container">
+          <input class="send-form__button button button--green" type="submit" value="Отправить форму" />
+          <p class="send-form__footnote"><span>*</span> — Обязательные поля</p>
         </div>
       </form>
     </main>
     <footer class="footer container">
       <div class="footer__logo" title="PINK-logo"></div>
       <div class="footer__social social">
-        <a class="social__link" href="#"><img/></a>
-        <a class="social__link" href="#"><img/></a>
-        <a class="social__link" href="#"><img/></a>
+        <a class="social__link" href="#"></a>
+        <a class="social__link" href="#"></a>
+        <a class="social__link" href="#"></a>
       </div>
       <div class="footer__copyright">
         <span>Разработано</span>

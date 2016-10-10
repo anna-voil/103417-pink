@@ -1,7 +1,7 @@
 @import "../node_modules/normalize.css/normalize.css";
 @import "variables.css";
 
-@import "achievement.css";
+@import "achievements.css";
 @import "add-photo.css";
 @import "advantages.css";
 @import "apps.css";
@@ -23,9 +23,14 @@
 @import "photo-block.css";
 @import "photos.css";
 @import "popup.css";
+@import "send-form.css";
 @import "services-package.css";
 @import "slider.css";
+@import "social.css";
 @import "story-form.css";
+@import "user-contacts.css";
+@import "user-story.css";
+@import "username.css";
 
 html {
   box-sizing: border-box;
@@ -39,6 +44,9 @@ body {
   margin: 0 auto;
   font-family: 'Open Sans';
   color: $darkblue;
+}
+p {
+  margin: 0;
 }
 
 img {

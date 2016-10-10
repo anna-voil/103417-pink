@@ -8,24 +8,28 @@
   </head>
   <body>
     <header class="header header--index">
-      <nav class="nav container">
-        <div class="nav__logo"></div>
-        <ul class="nav__items">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="foto.html">Фотографии</a></li>
-          <li class="nav__item"><a href="#">Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
-        </ul>
+      <nav class="nav">
+        <div class="nav__wrapper container">
+          <div class="nav__logo"></div>
+          <ul class="nav__items">
+            <li class="nav__item"><a href="index.html">Главная</a></li>
+            <li class="nav__item"><a href="foto.html">Фотографии</a></li>
+            <li class="nav__item"><a href="#">Конкурс</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="download container">
-        <div class="download__header">Взгляните на жизнь иначе!</div>
-        <button class="download__button button button--rounded" type="button">Скачать приложение</button>
-        <div class="download__icons">
-          <img class="download__icon" src="img/logo-apple.svg"/>
-          <img class="download__icon" src="img/logo-android.svg"/>
-          <img class="download__icon" src="img/logo-microsoft.svg"/>
-        </div>
-        <p class="download__comment">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="download__wrapper">
+            <div class="download__header">Взгляните на жизнь иначе!</div>
+            <button class="download__button button button--rounded" type="button">Скачать приложение</button>
+            <div class="download__icons">
+              <img class="download__icon" src="img/logo-apple.svg"/>
+              <img class="download__icon" src="img/logo-android.svg"/>
+              <img class="download__icon" src="img/logo-microsoft.svg"/>
+            </div>
+            <p class="download__comment">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
       </div>
     </header>
     <main class="main">
@@ -33,30 +37,37 @@
         <p class="offer__text">Устали от серости мегаполиса?</p>
         <p class="offer__text">Нам есть, что вам<br/> предложить!</p>
       </div>
-      <div class="advantages  container">
-        <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
-        <section class="advantages__review">
-          <h3 class="advantages__heading">Поднимает настроение</h3>
-          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </section>
-        <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
-        <section class="advantages__review">
-          <h3 class="advantages__heading">Меняет мир вокруг</h3>
-          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </section>
-        <img class="advantages__img advantages__img--last" src="img/iphone-screen-mobile@1x.png" width="157" height="320"/>
-        <section class="advantages__review">
-          <h3 class="advantages__heading">Заводит новых друзей</h3>
-          <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </section>
+      <div class="advantages">
+        <div class="container">
+          <div class="advantages__wrapper">
+            <section class="advantages__review">
+              <img class="advantages__img" src="img/iphone-screen-mobile@1x.png">
+              <h3 class="advantages__heading">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </section>
+            <section class="advantages__review">
+              <img class="advantages__img" src="img/iphone-screen-mobile@1x.png">
+              <h3 class="advantages__heading">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+            <section class="advantages__review">
+              <img class="advantages__img" src="img/iphone-screen-mobile@1x.png">
+              <h3 class="advantages__heading">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+            <img class="advantages__img-banner" src="img/iphone-screen-mobile@1x.png" width="157" height="320">
+          </div>
+        </div>
       </div>
-      <div class="fact container">
-        <img class="fact__img" src="#" width="300" height="350"/>
-        <section class="fact__section">
-          <h3 class="fact__heading">Эффект на 24 часа!</h3>
-          <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="fact__link" href="#">Узнать больше об исследовании</a>
-        </section>
+      <div class="fact">
+        <div class="fact__wrapper container">
+          <img class="fact__img" src="#" width="300" height="350"/>
+          <section class="fact__section">
+            <h3 class="fact__heading">Эффект на 24 часа!</h3>
+            <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="fact__link" href="#">Узнать больше об исследовании</a>
+          </section>
+        </div>
       </div>
       <div class="slider slider--white  container">
         <div class="slider__slides">
@@ -82,88 +93,125 @@
           <input class="slider__control" type="radio" />
         </div>
       </div>
-      <div class="slider slider--gray">
-        <div class="slider__slides">
-          <section class="slider__slide services-package">
+
+      <div class="services-package">
+        <div class="services-package__slides container">
+
+          <section class="services-package__item services-package__item--new">
+            <div class="services-package__header services-package__header--new">
+              <h3 class="services-package__name">Название</h3>
+              <p class="services-package__price">Цена</p>
+            </div>
+            <div class="services-package__options--new">
+              <div class="services-package__option services-package__option--new">
+                <span class="services-package__option-name services-package__option-name--new">Розовый фильтр</span>
+              </div>
+              <div class="services-package__option services-package__option--new">
+                <span class="services-package__option-name services-package__option-name--new">Смайлики</span>
+              </div>
+              <div class="services-package__option services-package__option--new">
+                <span class="services-package__option-name services-package__option-name--new">Комментарии</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="services-package__item">
             <div class="services-package__header">
               <h3 class="services-package__name">База</h3>
               <p class="services-package__price">1,99 USD</p>
             </div>
-            <ul class="services-package__options">
-              <li class="services-package__option">
+            <div class="services-package__options">
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Розовый фильтр</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option services-package__option--off">
                 <span class="services-package__option-name">Смайлики</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option services-package__option--off">
                 <span class="services-package__option-name">Комментарии</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
-          <section class="slider__slide services-package">
+
+          <section class="services-package__item">
             <div class="services-package__header">
               <h3 class="services-package__name">Стандарт</h3>
               <p class="services-package__price">3,99 USD</p>
             </div>
-            <ul class="services-package__options">
-              <li class="services-package__option">
+            <div class="services-package__options">
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Розовый фильтр</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Смайлики</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option  services-package__option--off">
                 <span class="services-package__option-name">Комментарии</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
-          <section class="slider__slide services-package">
+
+          <section class="services-package__item">
             <div class="services-package__header">
               <h3 class="services-package__name">Анлим</h3>
               <p class="services-package__price">9,99 USD</p>
             </div>
-            <ul class="services-package__options">
-              <li class="services-package__option">
+            <div class="services-package__options">
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Розовый фильтр</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Смайлики</span>
-              </li>
-              <li class="services-package__option">
+              </div>
+              <div class="services-package__option services-package__option--on">
                 <span class="services-package__option-name">Комментарии</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
-        </div>
-        <div class="slider__controls">
-          <input class="slider__control" type="radio" />
-          <input class="slider__control" type="radio" />
-          <input class="slider__control" type="radio" />
-        </div>
-      </div>
-    </main>
-    <footer class="index-footer">
-      <div class="contacts container">
-        <p class="contacts__contact-us">Остались вопросы? <br />Свяжитесь с нами!</p>
-        <div class="contacts__items">
-          <section class="contacts__block">
-            <h3 class="contacts__heading">Звоните:</h3>
-            <p class="contacts__info">+7 (812) 555-66-66</p>
-          </section>
-          <section class="contacts__block">
-            <h3 class="contacts__heading">Пишите:</h3>
-            <p class="contacts__info">mail@htmlacademy.ru</p>
-          </section>
-          <section class="contacts__block">
-            <h3 class="contacts__heading">Приезжайте в гости:</h3>
-            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
-          </section>
-        </div>
-      </div>
-      <div class="map">
 
+        </div>
+        <div class="services-package__controls">
+          <input class="services-package__control" type="radio" />
+          <input class="services-package__control" type="radio" />
+          <input class="services-package__control" type="radio" />
+        </div>
+      </div>
+
+    </main>
+    <div class="contacts container">
+      <p class="contacts__contact-us">Остались вопросы? <br />Свяжитесь с нами!</p>
+      <div class="contacts__items">
+        <section class="contacts__block">
+          <h3 class="contacts__heading">Звоните:</h3>
+          <p class="contacts__info">+7 (812) 555-66-66</p>
+        </section>
+        <section class="contacts__block">
+          <h3 class="contacts__heading">Пишите:</h3>
+          <p class="contacts__info">mail@htmlacademy.ru</p>
+        </section>
+        <section class="contacts__block">
+          <h3 class="contacts__heading">Приезжайте в гости:</h3>
+          <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+        </section>
+      </div>
+    </div>
+    <div class="map">
+
+    </div>
+    <footer class="footer container">
+      <div class="footer__logo" title="PINK-logo"></div>
+      <div class="footer__social social">
+        <a class="social__link" href="#"><img/></a>
+        <a class="social__link" href="#"><img/></a>
+        <a class="social__link" href="#"><img/></a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru"></a>
       </div>
     </footer>
+
+
+
   </body>
 </html>

@@ -14,6 +14,6 @@
   }
 }
 
-  @custom-media --mobile-widths (max-width: 699px);
-  @custom-media --tablet-widths (min-width: 700px) and (max-width: 899px);
+  @custom-media --mobile-widths (max-width: 399px);
+  @custom-media --tablet-widths (min-width: 400px) and (max-width: 899px);
   @custom-media --desktop-widths (min-width: 900px);
