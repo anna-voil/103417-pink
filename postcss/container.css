@@ -17,3 +17,6 @@
   @custom-media --mobile-widths (max-width: 399px);
   @custom-media --tablet-widths (min-width: 400px) and (max-width: 899px);
   @custom-media --desktop-widths (min-width: 900px);
+
+  /*РЕТИНИЗАЦИЯ*/
+  @custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
