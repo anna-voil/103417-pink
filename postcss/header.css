@@ -17,7 +17,7 @@
   }
 
   @media (--tablet-widths) {
-    @custom-media --retina {
+    @media (--retina) {
       background-image: url(../img/bg-back-mobile@2x.jpg);
     }
 
@@ -31,7 +31,7 @@
 
   @media (--desktop-widths) {
     background-size: 100% auto;
-    @custom-media --retina {
+    @media (--retina) {
       background-image: url(../img/bg-back-mobile@2x.jpg);
     }
 
@@ -58,7 +58,7 @@
   @media (--tablet-widths) {
     background-size: 470px auto, cover;
     background-position: bottom right 45px, top center;
-    @custom-media --retina {
+    @media (--retina) {
       background-image: url(../img/iphone-hand-mobile@2x.png),
                         url(../img/bg-back-mobile@2x.jpg);
     }
@@ -68,7 +68,7 @@
     position: relative;
     background-size: 470px auto, cover;
     background-position: bottom right 157px, top center;
-    @custom-media --retina {
+    @media (--retina) {
       background-image: url(../img/iphone-hand-mobile@2x.png),
                         url(../img/bg-back-mobile@2x.jpg);
     }
